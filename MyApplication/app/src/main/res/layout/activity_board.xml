@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BoardActivity">
+
+
+    <Button
+        android:id="@+id/btn_board_insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+
+        android:layout_marginTop="37dp"
+        android:text="게시글 작성"
+        app:layout_constraintBottom_toTopOf="@+id/tv_getmsg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et_insert"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_board_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="16dp"
+        android:text="게시글 삭제"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_getmsg"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="16dp"
+        android:text="뒤로가기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_getmsg"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/et_insert"
+        android:layout_width="283dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="3dp"
+
+        android:ems="10"
+        android:hint="게시글을 작성하세요"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/tv_getmsg"
+        app:layout_constraintEnd_toStartOf="@+id/btn_board_insert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_getmsg"
+        android:layout_width="357dp"
+        android:layout_height="540dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="30dp"
+        android:hint="게시판입니다"
+        android:textColorLink="#0B0909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_board_insert" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
